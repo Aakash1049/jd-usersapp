@@ -3,6 +3,8 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 5000;
 const conn = require("./seed/seeds");
+const path = require('path');
+
 
 conn.on("connected ", () => {
  console.log("Connected to MongoDB! ");
