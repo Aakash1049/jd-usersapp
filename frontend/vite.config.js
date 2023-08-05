@@ -7,7 +7,7 @@ export default defineConfig({
    build: {
     outDir: 'frontend/dist',
     rollupOptions: {
-      external: ['react/jsx-runtime'],
+      external: ['react', 'react/jsx-runtime'],
     },
   },
 })
