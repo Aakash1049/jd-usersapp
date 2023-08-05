@@ -6,5 +6,8 @@ export default defineConfig({
   plugins: [react()],
    build: {
     outDir: 'frontend/dist',
+    rollupOptions: {
+      external: ['react/jsx-runtime'],
+    },
   },
 })
