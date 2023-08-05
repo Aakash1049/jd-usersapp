@@ -9,7 +9,7 @@
     "frontend": "npm start frontend",
     "frontendinstall": "npm install --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\"",
-    "render-postbuild": "NPM_CONFIG_PRODUCTION=false yarn frontend:install && yarn frontend:build"
+    "render-postbuild": "yarn frontend:install && yarn frontend:build"
   },
   "author": "Jaydeep",
   "license": "ISC",
